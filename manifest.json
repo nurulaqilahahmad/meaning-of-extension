@@ -1,0 +1,11 @@
+{
+    "name": "MeaningOf",
+    "version": "1.0.0",
+    "description": "This is an extension to look up for the meaning of a word that is selected in the web.",
+    "manifest_version": 3,
+    "author": "Nurul Aqilah Ahmad",
+    "action" : {
+        "default_popup": "src/app/index.html",
+        "default_title": "MeaningOf"
+    }
+}

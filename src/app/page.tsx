@@ -4,15 +4,41 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
+        {/* <Image
           className="dark:invert"
           src="/next.svg"
           alt="Next.js logo"
           width={180}
           height={38}
           priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        /> */}
+        <h1 className="text-2xl text-center font-bold w-full">MeaningOf</h1>
+
+        <div className="w-full">
+          <input type="text" id="search-word" placeholder="Enter a word" className="w-full p-2 rounded-sm border-b-[0.2rem] border-t-[0.1rem] border-x-[0.1rem] focus:border-b-white text-xl font-extrabold" />
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <p className="font-thin">This is the phonetics</p>
+          <ul className="list-inside list-none text-center sm:text-left">
+            <li className="gap-2 mb-4">
+              <code>Part Of Speech</code><br />
+              <ol className="list-inside list-decimal pl-2">
+                <li className="mb-2">
+                  This will be the definition of the word. <br />
+                  <span className="font-light text-slate-300">"This is the example of the definition."</span>
+                </li>
+                <li className="mb-2">
+                  This will be the definition of the word. <br />
+                  <span className="font-light text-slate-300">"This is the example of the definition."</span>
+                </li>
+              </ol>
+              Synonyms:
+            </li>
+          </ul>
+        </div>
+
+        {/* <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
@@ -47,10 +73,12 @@ export default function Home() {
           >
             Read our docs
           </a>
-        </div>
+        </div> */}
       </main>
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
+        <p>Built by Nurul Aqilah Ahmad</p>
+        {/* <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
           target="_blank"
@@ -94,7 +122,7 @@ export default function Home() {
             height={16}
           />
           Go to nextjs.org →
-        </a>
+        </a> */}
       </footer>
     </div>
   );
